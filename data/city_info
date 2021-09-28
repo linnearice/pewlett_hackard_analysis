@@ -1,0 +1,18 @@
+drop table cities;
+
+create table cities(
+	c_id int not null,
+	city varchar (30) not null,
+	c_state varchar (30) not null,
+	population int not null,
+	primary key (c_id));
+	
+insert into cities (c_id,city,c_state,population) values (1,'Alameda','California',79177);
+insert into cities (c_id,city,c_state,population) values (2,'Mesa','Arizona',496401);
+insert into cities (c_id,city,c_state,population) values (3,'Boerne','Texas',16056);
+insert into cities (c_id,city,c_state,population) values (4,'Boerne','Texas',16056);
+insert into cities (c_id,city,c_state,population) values (5,'Anaheim','Texas',352497);
+insert into cities (c_id,city,c_state,population) values (6,'Tucson','Arizona',535677);
+insert into cities (c_id,city,c_state,population) values (7,'Garland','Texas',238002);
+
+select * from cities;
